@@ -9,13 +9,14 @@ import jakarta.persistence.*;
 @Entity
 public class Client {
 	@Id
+	@GeneratedValue
     private UUID clientId;
  
     private String fullName;
     private String email;
     private String phone;
  
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL )
     @JoinColumn(name = "client_id")
     private List<ClientApartment> apartments;
 

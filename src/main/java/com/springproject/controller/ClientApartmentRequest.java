@@ -1,19 +1,8 @@
-package com.springproject.entity;
+package com.springproject.controller;
 
-import java.util.UUID;
+public class ClientApartmentRequest {
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-
-@Entity
-@Table(name = "client_apartments")
-public class ClientApartment {
-	@Id
-	@GeneratedValue
-    private UUID apartmentId;
-    private String description;
+	private String description;
     private String buildingName;
     private String streetAddress;
     private String city;
@@ -21,12 +10,6 @@ public class ClientApartment {
     private boolean isAvailableForRent;
     private int rentPrice;
     
-	public UUID getApartmentId() {
-		return apartmentId;
-	}
-	public void setApartmentId(UUID apartmentId) {
-		this.apartmentId = apartmentId;
-	}
 	public String getDescription() {
 		return description;
 	}
