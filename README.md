@@ -1,5 +1,51 @@
 # apartment_management
 
+Testing:
+
+To check REST Controller:
+
+curl --location --request GET 'http://localhost:8080/hello'
+
+To get all clients:
+
+curl --location --request GET 'http://localhost:8080/api/clients'
+
+To get all apartments:
+
+curl --location --request GET 'http://localhost:8080/api/apartments'
+
+To retrieve data of a client using their id:
+
+curl --location --request GET 'http://localhost:8080/api/clients/eae115fc-f2c1-4842-b823-6486b737dac8'
+
+To retrieve apartments based on certain specifications(all optional):
+
+curl --location --request GET 'http://localhost:8080/api/apartments?minPrice=20000&maxPrice=4000000&isAvailableForRent=true&city=met'
+
+To add new client/apartment using POST:
+
+curl --location --request POST 'http://localhost:8080/api/client' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "fullName": "Diana Prince",
+  "email": "diana.prince@mail.com",
+  "phone": "777-7777",
+  "apartments": [
+    {
+      "description": "Diana Prince building 1",
+      "buildingName": "Athens Temple",
+      "streetAddress": "Athens Ancient Street 7",
+      "city": "Athens",
+      "postalCode": "777111",
+      "rentPrice": 399861,
+      "availableForRent": false
+    }
+  ]
+}'
+
+
+Project Description:
+
 The Rentmazing Apartment Management System is a comprehensive application developed to streamline the rental property management process for Rentmazing, a leading rental property company. The project involved the creation of a robust and efficient REST API using Spring Boot 3 and Spring Data JPA, allowing seamless interaction with the apartment database. By implementing various functionalities, the application facilitates the addition, search, update, and deletion of apartments for efficient property management.
 
 Features:
