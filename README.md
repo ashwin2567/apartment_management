@@ -1,4 +1,6 @@
-# apartment_managementThe Rentmazing Apartment Management System is a comprehensive application developed to streamline the rental property management process for Rentmazing, a leading rental property company. The project involved the creation of a robust and efficient REST API using Spring Boot 3 and Spring Data JPA, allowing seamless interaction with the apartment database. By implementing various functionalities, the application facilitates the addition, search, update, and deletion of apartments for efficient property management.
+# apartment_management
+
+The Rentmazing Apartment Management System is a comprehensive application developed to streamline the rental property management process for Rentmazing, a leading rental property company. The project involved the creation of a robust and efficient REST API using Spring Boot 3 and Spring Data JPA, allowing seamless interaction with the apartment database. By implementing various functionalities, the application facilitates the addition, search, update, and deletion of apartments for efficient property management.
 
 Features:
 
